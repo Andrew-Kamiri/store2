@@ -1,0 +1,109 @@
+.fOoter {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  .tOp {
+    flex: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    input {
+      width: 20rem;
+      height: 35px;
+      padding-bottom: 1rem;
+    }
+    button {
+      height: 35px;
+      background-color: red;
+      border: none;
+      margin-left: 2px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      p {
+        color: white;
+      }
+    }
+    :hover {
+      background-color: #c09071;
+    }
+  }
+  .content {
+    flex: 9;
+    display: flex;
+    // gap: 10rem;
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
+      align-items: center;
+      .lOgo {
+        width: 100%;
+        align-items: center;
+        gap: 1rem;
+      }
+      .locations {
+        width: 100%;
+        align-items: center;
+      }
+    }
+
+    .lOgo {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      .lOgoimg {
+        flex: 1;
+        display: flex;
+      }
+      .lOgodesc {
+        flex: 1;
+        text-align: left;
+        margin-top: 0;
+        width: 60%;
+        @media only screen and (max-width: 700px) {
+          width: 100%;
+        }
+      }
+      .lOgoicons {
+        display: flex;
+        flex: 1;
+        gap: 1rem;
+        .icon {
+          font-size: 30px;
+          border-radius: 5px;
+
+          color: red;
+        }
+      }
+    }
+    .openinghours {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      ul {
+        h1 {
+          font-size: 25px;
+        }
+
+        list-style: none;
+      }
+    }
+    .locations {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+
+      ul {
+        list-style: none;
+        h1 {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}
